@@ -1,0 +1,24 @@
+server:
+  compression:
+    enabled: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+spring:
+  application:
+    name: deck
+  mandatory-file-encoding: UTF-8
+  http:
+    encoding:
+      force: true
+      force-request: true
+      force-response: true
+
+app:
+  cf:
+    api-endpoint: # CloudFoundry endpoint
+    oauth-endpoint: # CloudFoundry authorization endpoint /oauth/token
+    username: # CloudFoundry username
+    password: # CloudFoundry password
