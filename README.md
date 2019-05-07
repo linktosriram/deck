@@ -36,8 +36,7 @@ With deck:
 ```
 $ time curl --request GET \
     --url <app-url>/api/v1/spaces/<space-guid>/service-instances \
-    --header 'Accept: application/json;charset=UTF-8' \
-    --header 'Accept-Encoding: gzip'
+    --compressed
 ...
 ...
 real	0m6.257s
